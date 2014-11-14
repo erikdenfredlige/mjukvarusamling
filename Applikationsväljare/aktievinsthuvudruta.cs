@@ -17,8 +17,6 @@ using System.Windows.Forms;
 namespace Applikationsväljare
 {
 
-    
-
     public partial class aktievinsthuvudruta : Form
     {
 
@@ -66,6 +64,7 @@ namespace Applikationsväljare
             {
                courtageSträng = courtageSträng + "Det ger en positiv differens om " + ((antalAktier * säljpris) - (antalAktier * inköpspris)).ToString() + "kr.\n";
             }
+
             else
             {
                 courtageSträng = courtageSträng + "Det ger en negativ differens om " + ((antalAktier * säljpris) - (antalAktier * inköpspris)).ToString() + "kr.\n";
@@ -75,6 +74,7 @@ namespace Applikationsväljare
                 nettoSträng = "Efter avdraget courtage blev affären en förlust om " + (differens - summaCourtage).ToString() + "kr. (" + summaCourtage.ToString() + "kr i courtage)";
                 courtageSträng = courtageSträng + nettoSträng;
             }
+
             else
             {
                 nettoSträng = "Efter avdraget courtage blev affären en vinst om " + (differens - summaCourtage).ToString() + "kr. (" + summaCourtage.ToString() + "kr i courtage.)\n";
@@ -89,6 +89,7 @@ namespace Applikationsväljare
         }
 
         private void knappRäknaUt_Click(object sender, EventArgs e)
+
         {
             //Samtliga inputrutor initierar nu variablernas värden och dessa värden används i metoden ovan.
             antalAktier = Convert.ToInt32(inputAntalAktier.Text);
@@ -133,5 +134,7 @@ namespace Applikationsväljare
             base.OnFormClosing(e);
             Application.Exit();
         }
+
     }
+
 }

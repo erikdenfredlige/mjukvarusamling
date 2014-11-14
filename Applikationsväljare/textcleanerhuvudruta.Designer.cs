@@ -79,7 +79,6 @@
             this.bytUtMotRuta.Name = "bytUtMotRuta";
             this.bytUtMotRuta.Size = new System.Drawing.Size(100, 20);
             this.bytUtMotRuta.TabIndex = 3;
-            this.bytUtMotRuta.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // vadSkallBytasUtRuta
             // 

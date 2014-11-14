@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Applikationsväljare
 {
+
     public partial class textcleanerhuvudruta : Form
     {
 
@@ -52,11 +53,6 @@ namespace Applikationsväljare
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tillbakaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form återgå = new programvalsruta();
@@ -76,5 +72,6 @@ namespace Applikationsväljare
             base.OnFormClosing(e);
             Application.Exit();
         }
+
     }
 }
