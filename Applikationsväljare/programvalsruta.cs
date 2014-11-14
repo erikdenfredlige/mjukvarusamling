@@ -22,31 +22,25 @@ namespace Applikationsväljare
 
         private void avsluta_Click(object sender, EventArgs e)
         {
+            //Metod för att avsluta applikationen när knappen avsluta trycks in.
             Application.Exit();
         }
 
         private void aktievinst_Click(object sender, EventArgs e)
         {
+            //Metod för att starta applikationen Aktievinst.
             Form startaAktievinst = new aktievinsthuvudruta();
             startaAktievinst.Show();
             this.Hide();
 
         }
 
-        private void programvalsruta_Load(object sender, EventArgs e)
-        {
-        }
-
         private void textcleaner_Click(object sender, EventArgs e)
         {
+            //Metod för att starta applikationen Textcleaner.
             Form startaTextCleaner = new textcleanerhuvudruta();
             startaTextCleaner.Show();
             this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

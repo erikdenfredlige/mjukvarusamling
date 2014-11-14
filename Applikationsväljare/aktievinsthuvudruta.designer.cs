@@ -38,10 +38,10 @@
             this.inputSäljpris = new System.Windows.Forms.TextBox();
             this.rubrikAngeSäljpris = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.arkivToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.avslutaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arkiv = new System.Windows.Forms.ToolStripMenuItem();
+            this.omIArkiv = new System.Windows.Forms.ToolStripMenuItem();
+            this.linjeIArkiv = new System.Windows.Forms.ToolStripSeparator();
+            this.tillbakaIArkiv = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +51,6 @@
             this.inputAntalAktier.Name = "inputAntalAktier";
             this.inputAntalAktier.Size = new System.Drawing.Size(172, 20);
             this.inputAntalAktier.TabIndex = 2;
-            this.inputAntalAktier.TextChanged += new System.EventHandler(this.inputAntalAktier_TextChanged);
             // 
             // rubrikAngeAntalAktier
             // 
@@ -61,7 +60,6 @@
             this.rubrikAngeAntalAktier.Size = new System.Drawing.Size(90, 13);
             this.rubrikAngeAntalAktier.TabIndex = 1;
             this.rubrikAngeAntalAktier.Text = "Ange antal aktier:";
-            this.rubrikAngeAntalAktier.Click += new System.EventHandler(this.label1_Click);
             // 
             // rubrikAngeInköpspris
             // 
@@ -114,48 +112,46 @@
             this.rubrikAngeSäljpris.Size = new System.Drawing.Size(115, 13);
             this.rubrikAngeSäljpris.TabIndex = 5;
             this.rubrikAngeSäljpris.Text = "Ange aktiernas säljpris:";
-            this.rubrikAngeSäljpris.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arkivToolStripMenuItem});
+            this.arkiv});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // arkivToolStripMenuItem
             // 
-            this.arkivToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.infoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.avslutaToolStripMenuItem});
-            this.arkivToolStripMenuItem.Name = "arkivToolStripMenuItem";
-            this.arkivToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.arkivToolStripMenuItem.Text = "Arkiv";
+            this.arkiv.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.omIArkiv,
+            this.linjeIArkiv,
+            this.tillbakaIArkiv});
+            this.arkiv.Name = "Arkiv";
+            this.arkiv.Size = new System.Drawing.Size(46, 20);
+            this.arkiv.Text = "Arkiv";
             // 
             // infoToolStripMenuItem
             // 
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.infoToolStripMenuItem.Text = "Om...";
-            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            this.omIArkiv.Name = "omIArkiv";
+            this.omIArkiv.Size = new System.Drawing.Size(115, 22);
+            this.omIArkiv.Text = "Om...";
+            this.omIArkiv.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(112, 6);
+            this.linjeIArkiv.Name = "linjeIArkiv";
+            this.linjeIArkiv.Size = new System.Drawing.Size(112, 6);
             // 
-            // avslutaToolStripMenuItem
+            // Tillbaka i arkiv-toolstrip.
             // 
-            this.avslutaToolStripMenuItem.Name = "avslutaToolStripMenuItem";
-            this.avslutaToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
-            this.avslutaToolStripMenuItem.Text = "Tillbaka";
-            this.avslutaToolStripMenuItem.Click += new System.EventHandler(this.avslutaToolStripMenuItem_Click);
+            this.tillbakaIArkiv.Name = "tillbakaIArkiv";
+            this.tillbakaIArkiv.Size = new System.Drawing.Size(115, 22);
+            this.tillbakaIArkiv.Text = "Tillbaka";
+            this.tillbakaIArkiv.Click += new System.EventHandler(this.avslutaToolStripMenuItem_Click);
             // 
             // aktievinsthuvudruta
             // 
@@ -196,10 +192,10 @@
         private System.Windows.Forms.TextBox inputSäljpris;
         private System.Windows.Forms.Label rubrikAngeSäljpris;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem arkivToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem avslutaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem arkiv;
+        private System.Windows.Forms.ToolStripMenuItem omIArkiv;
+        private System.Windows.Forms.ToolStripMenuItem tillbakaIArkiv;
+        private System.Windows.Forms.ToolStripSeparator linjeIArkiv;
 
     }
 }
